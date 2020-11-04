@@ -31,6 +31,16 @@ is a prime number:
 def is_prime(num):
     """Is a number a prime number?"""
 
+    n = 2
+    if num < n:
+        return False
+    while n < num:
+        if num%n == 0:
+            return False
+        n+= 1    
+    return True          
+
+
 
 if __name__ == '__main__':
     import doctest
